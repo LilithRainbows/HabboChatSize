@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>HabboChatSize</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Flazzy\**" />
+    <EmbeddedResource Remove="Flazzy\**" />
+    <None Remove="Flazzy\**" />
+    <Page Remove="Flazzy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\1018_Ubuntu-B_ttf%24bfcaae3c0682747a1f854f8f10b1fdf6977262203_Ubuntu.ttf" />
+    <None Remove="Fonts\1157_Ubuntu-I_ttf%24444d80eb3024d7f4f962ba8def25d7eb1002950248_Ubuntu.ttf" />
+    <None Remove="Fonts\11_Ubuntu-C_ttf%24575c220df53e584b472ad290eed688ca-2117752143_Ubuntu.ttf" />
+    <None Remove="Fonts\1208_Ubuntu-M_ttf%24d469043b4de554ac003bf1eb3acca8fb443919416_UbuntuMedium.ttf" />
+    <None Remove="Fonts\1302_Ubuntu-BI_ttf%24edf46554513c24a3b65481532ae2f6cc2070092891_Ubuntu.ttf" />
+    <None Remove="Fonts\15_Ubuntu-I_ttf%2452d38e802c9b3feaf5eafa33378fc4c2-2140281673_Ubuntu.ttf" />
+    <None Remove="Fonts\16_Ubuntu-B_ttf%245ec28b77dd7fc32d200954c313b7b297-2115392074_Ubuntu.ttf" />
+    <None Remove="Fonts\1_Ubuntu-BI_ttf%243742fce71b44baa5c02674273d694b861266045718_Ubuntu.ttf" />
+    <None Remove="Fonts\2_Ubuntu-R_ttf%245275761c9603c5ce201d03407747850d2052509749_Ubuntu.ttf" />
+    <None Remove="Fonts\3_Ubuntu-I_ttf%2434355186168a045ef71e0c00e88ec1192085926455_Ubuntu.ttf" />
+    <None Remove="Fonts\593_Ubuntu-C_ttf%24f3e35bbb6e0ffbd2357cb6b73bade79a1385876125_UbuntuCondensed.ttf" />
+    <None Remove="Fonts\5_Ubuntu-B_ttf%246c5a8aaacd65083dbc55d58bdd209e802091835414_Ubuntu.ttf" />
+    <None Remove="Fonts\667_Volter_Bol_ttf%245af620a9c5ae912f463a59f160fc158c-236345069_Volter Bold.ttf" />
+    <None Remove="Fonts\759_UbuntuThick-Bold_ttf%2466b1497e32b7d5ba1a7e0314cd04d051-403061206_UbuntuThick.ttf" />
+    <None Remove="Fonts\796_Ubuntu-R_ttf%24366dea9fe487a8e3e22692d2d7b122e41010812440_Ubuntu.ttf" />
+    <None Remove="Fonts\988_Volter_latin2_baseline_ttf%24c64c3c7bd4929e221cddfb78c1ae2c09-1977231837_Volter.ttf" />
+    <None Remove="Fonts\9_Ubuntu-BI_ttf%24fe2bb0caa14806a8d7c5ec31d45ee0ac1564787062_Ubuntu.ttf" />
+    <None Remove="Fonts\HabboUbuntu.ttf" />
+    <None Remove="Fonts\Ubuntu.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnfamiliarLegacy.Flazzy" Version="1.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Ubuntu.ttf" />
+  </ItemGroup>
+
+</Project>
